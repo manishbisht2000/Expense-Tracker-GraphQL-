@@ -20,5 +20,20 @@ const userTypeDef = `#graphql
         logout: LogoutResponse
     }
 
-    
+    input SignUpInput {
+        username: String!
+        name: String!
+        password: String!
+        gender: String!
+    }
+
+    input LoginInput {
+        username: String!
+        password: String!
+    }
+
+    input LogoutResponse {
+        message: String!
+    }
 `
+export default userTypeDef
